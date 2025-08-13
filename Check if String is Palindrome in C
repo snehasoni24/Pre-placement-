@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+
+bool isPalindrome(char *str) {
+    int i = 0, j = strlen(str) - 1;
+    while (i < j)
+        if (str[i++] != str[j--]) return false;
+    return true;
+}
+
+int main() {
+    char str[] = "madam";
+    printf("%s\n", isPalindrome(str) ? "True" : "False");
+    return 0;
+}
