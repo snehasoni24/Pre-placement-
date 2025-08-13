@@ -1,0 +1,4 @@
+a = [5,0,10,6]
+b = [1,2,4,0]
+s = [a[i]+b[i] for i in range(len(a))]
+print(" + ".join(f"{coef}x^{i}" for i,coef in enumerate(s) if coef)[::-1])
