@@ -1,0 +1,7 @@
+a = [1,2,3]
+b = [4,5]
+prod = [0]*(len(a)+len(b)-1)
+for i in range(len(a)):
+    for j in range(len(b)):
+        prod[i+j] += a[i]*b[j]
+print(prod)
