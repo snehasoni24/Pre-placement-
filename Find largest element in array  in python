@@ -1,0 +1,4 @@
+def largest(arr):
+    return max(arr)
+
+print(largest([1, 3, 2, 5, 4]))
